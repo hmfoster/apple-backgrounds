@@ -1,11 +1,12 @@
 body{
-	font-family: "Myriad","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+	font-family: "Vegur" "Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
 	color: #fff;
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: lighter;
 }
 header{
 	padding: 10px 0;
-	font-size: .75em;
+	font-size: 1em;
 	font-weight:100;
 	background: rgba(0,0,0,0.6);
 	position: relative;
@@ -83,4 +84,17 @@ h1{
 	.promos div{
 		width:100%;
 	}
+}
+footer{
+	padding: 0 100px;
+}
+footer p, li, a{
+	display: inline-block;
+	text-decoration: none;
+	color: #777;
+	font-size: 13px;
+	margin-top: 20px;
+}
+footer nav{
+	float: right;
 }
