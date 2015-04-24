@@ -1,0 +1,86 @@
+body{
+	font-family: "Myriad","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+	color: #fff;
+	font-size: 18px;
+}
+header{
+	padding: 10px 0;
+	font-size: .75em;
+	font-weight:100;
+	background: rgba(0,0,0,0.6);
+	position: relative;
+	height: 30px;
+}
+.container{
+	background: url(images/forest_medium.jpg) center /cover no-repeat;
+	height: 630px;
+	text-align: center;
+	height: 700px;
+}
+nav{
+	display: flex;
+    justify-content: space-between;
+	width: 1000px;
+	margin: auto;
+	text-align: justify;
+}
+a{
+	text-decoration: none;
+}
+.container a{
+	vertical-align: middle;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	margin: auto;
+}
+h1{
+	font-size: 64px;
+	width: 900px;
+	font-weight: 100px;
+	vertical-align: middle;
+	margin: auto;
+	margin-top: 250px;
+}
+#action{
+	display: block;
+	padding-top: 40px;
+}
+.promos div{
+	display: inline-block;
+	min-width: 586px;
+	position: relative;
+	height: 200px;
+	width: 50%;
+	float: left;
+}
+.promos a{
+	display: inline-block;
+	height: 200px;
+	min-width: 300px;
+	width: 50%;
+	position: absolute;
+}
+.promo1, .promo3{
+	left: 0;
+}
+.promo2, .promo4{
+	right: 0;
+}
+.promo1{
+	background: url(images/promo_world_gallery_large.jpg) center;
+}
+.promo2{
+	background: url(images/promo_watch_large.jpg) center;
+}
+.promo3{
+	background: url(images/christy.jpg)center;
+}
+.promo4{
+	background: url(images/promo_macbook_large.jpg) center;
+}
+@media (max-width: 1175px){
+	.promos div{
+		width:100%;
+	}
+}
