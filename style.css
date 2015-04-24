@@ -47,6 +47,9 @@ h1{
 	display: block;
 	padding-top: 40px;
 }
+section{
+	height: 200px;
+}
 .promos div{
 	display: inline-block;
 	min-width: 586px;
@@ -58,9 +61,11 @@ h1{
 .promos a{
 	display: inline-block;
 	height: 200px;
+	margin: auto;
 	min-width: 300px;
 	width: 50%;
 	position: absolute;
+	border: solid 4px white;
 }
 .promo1, .promo3{
 	left: 0;
@@ -84,17 +89,51 @@ h1{
 	.promos div{
 		width:100%;
 	}
+	section{
+		height: 400px;
+	}
 }
 footer{
-	padding: 0 100px;
+	padding: 0 22px;
+	clear: both;
+	max-width: 1050px;
+	margin: 20px auto 40px auto;
+	position: relative;
+	height: 45px;
+}
+footer a, p{
+	padding: 0 4px;
+}
+footer a, li{
+	border-right: solid 1px #ccc;
+}
+footer a:last-child, li:last-child{
+	border: none;
 }
 footer p, li, a{
 	display: inline-block;
 	text-decoration: none;
 	color: #777;
 	font-size: 13px;
-	margin-top: 20px;
 }
-footer nav{
-	float: right;
+ul{
+	position: absolute;
+	top: 0;
+	right: 22px;
+}
+ul img{
+	height: 15px;
+}
+p.copyright {
+	position: absolute;
+	bottom: 0;
+	left: 22px;
+}
+@media (max-width: 1100px){
+	ul{
+		position: static;
+	}
+	footer{
+		height: 60px;
+	}
 }
