@@ -1,70 +1,69 @@
-body{
+body, .container a{
 	font-family: "Vegur" "Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
-	color: #fff;
+	color: #f2f2f2;
 	font-size: 20px;
-	font-weight: lighter;
+}
+
+.container{
+	background: url(images/forest_medium.jpg) center /cover no-repeat;
+	text-align: center;
+	height: 700px;
+}
+header, .container a, .promos div, footer{
+	position: relative;
 }
 header{
 	padding: 10px 0;
 	font-size: 1em;
-	font-weight:100;
 	background: rgba(0,0,0,0.6);
-	position: relative;
-	height: 30px;
 }
-.container{
-	background: url(images/forest_medium.jpg) center /cover no-repeat;
-	height: 630px;
-	text-align: center;
-	height: 700px;
+section, div{
+	height: 200px;
 }
 nav{
 	display: flex;
     justify-content: space-between;
-	width: 1000px;
-	margin: auto;
+	width: 1175px;
 	text-align: justify;
 }
-a{
-	text-decoration: none;
-}
-.container a{
-	vertical-align: middle;
-	color: #fff;
-	display: inline-block;
-	position: relative;
+nav, .container a, h1{
 	margin: auto;
 }
+a, a img, .container a, h1{
+	vertical-align: middle;
+	
+}
+a, a img{
+	text-decoration: none;
+}
+header a:hover{
+	color: #ccc;
+}
+
 h1{
 	font-size: 64px;
 	width: 900px;
-	font-weight: 100px;
-	vertical-align: middle;
-	margin: auto;
 	margin-top: 250px;
 }
 #action{
 	display: block;
 	padding-top: 40px;
 }
-section{
-	height: 200px;
+.promos div, li{
+	display: inline-block;
+}
+.promos div, .promos a{
+	width: 50%;
 }
 .promos div{
-	display: inline-block;
 	min-width: 586px;
-	position: relative;
-	height: 200px;
-	width: 50%;
 	float: left;
 }
-.promos a{
-	display: inline-block;
-	height: 200px;
-	margin: auto;
-	min-width: 300px;
-	width: 50%;
+.promos a, ul, p.copyright{
 	position: absolute;
+}
+.promos a{
+	height: 200px;
 	border: solid 4px white;
 }
 .promo1, .promo3{
@@ -98,26 +97,33 @@ footer{
 	clear: both;
 	max-width: 1050px;
 	margin: 20px auto 40px auto;
-	position: relative;
 	height: 45px;
 }
 footer a, p{
 	padding: 0 4px;
 }
-footer a, li{
-	border-right: solid 1px #ccc;
+.copyright a, li{
+	border-right: solid 1px #999;
 }
 footer a:last-child, li:last-child{
 	border: none;
 }
 footer p, li, a{
-	display: inline-block;
-	text-decoration: none;
-	color: #777;
+	color: #999;
 	font-size: 13px;
 }
+footer a{
+	text-decoration: none;
+	color: #666;
+}
+footer a:hover{
+	color: #666;
+}
+.container a:hover, footer a:hover{
+	text-decoration: underline;
+}
+
 ul{
-	position: absolute;
 	top: 0;
 	right: 22px;
 }
@@ -125,7 +131,6 @@ ul img{
 	height: 15px;
 }
 p.copyright {
-	position: absolute;
 	bottom: 0;
 	left: 22px;
 }
